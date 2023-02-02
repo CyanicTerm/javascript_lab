@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NoteKeep</title>
-</head>
-<body>
-    <img src="" alt="">
-</body>
+<html>
+  <head>
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">    
+  </head>
+  <body>
+    <h1>Notes App</h1>
+    <form id="isEdit">
+        <input type="text" id="editTitle">
+        <textarea id="editContent" cols="30" rows="10"></textarea>
+        <div>
+          <input type="color" id="editColor">
+        </div>
+        <button id="confirm-btn">Confirm</button>
+        <button id="cancel-btn">Cancel</button>
+    </form>
+    <div id="pinned"></div>
+    <div id="app"></div>
+    <form id="addForm">
+      <input type="text" id="title" placeholder="Note title" style="margin-bottom: 5px;">
+      <textarea id="content" placeholder="Note content" style="margin-bottom: 5px;"></textarea>
+      <input type="color" id="color" value="#ffffff" style="margin-bottom: 5px;">
+      <button id="add-btn" style="margin-bottom: 5px;">Add Note</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
 </html>

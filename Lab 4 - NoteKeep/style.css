@@ -1,0 +1,17 @@
+#addForm {
+    margin-top: 10px;    
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #isEdit {
+    display: none;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    margin-left: -25%;
+    position: absolute;
+    margin-top: -25%;
+  }
