@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-    <div>Press a key to play sound</div>
-    <ul>
-        <li>q - boom</li>
-        <li>w - clap</li>
-        <li>e - hithat</li>
-        <li>r - kick</li>
-        <li>t - openhat</li>
-        <li>y - ride</li>
-        <li>u - snare</li>
-        <li>i - tink</li>
-        <li>o - tom</li>
-    </ul>
-
-    <div class="control">
-        <button class="record">Record</button>
-        <button class="play">Play</button>
+  </head>
+  <body>
+    <audio src="./sounds/boom.wav" id="boom"></audio>
+    <audio src="./sounds/clap.wav" id="clap"></audio>
+    <audio src="./sounds/hihat.wav" id="hihat"></audio>
+    <audio src="./sounds/kick.wav" id="kick"></audio>
+    <audio src="./sounds/openhat.wav" id="openhat"></audio>
+    <audio src="./sounds/ride.wav" id="ride"></audio>
+    <audio src="./sounds/snare.wav" id="snare"></audio>
+    <audio src="./sounds/tom.wav" id="tom"></audio>
+    <audio src="./sounds/tink.wav" id="tink"></audio>
+    <div id="wrapper">
+      <main>
+        <div id="boomTile">Q</div>
+        <div id="clapTile">W</div>
+        <div id="hihatTile">E</div>
+        <div id="kickTile">R</div>
+        <div id="openhatTile">T</div>
+        <div id="rideTile">Y</div>
+        <div id="snareTile">U</div>
+        <div id="tomTile">I</div>
+      </main>
+      <div id="paths">
+        <div id="path1" class="path">
+          <input type="checkbox" id="input1" />
+          <button class="playSoundBtn btn" id="playBtn1"></button>
+          <button class="recordSoundBtn btn" id="recordBtn1">Rec</button>
+        </div>
+        <button id="addPath" class="btn">+</button>
+        <button id="playAllBtn" class="btn">play all</button>
+        <button id="playSelectedBtn" class="btn">play selected</button>
+        <button id="deleteSelectedBtn" class="btn">delete selected</button>
+      </div>
     </div>
-
-    <div id="sounds">
-        <audio src="./sounds/boom.wav" id="q"></audio>
-        <audio src="./sounds/clap.wav" id="w"></audio>
-        <audio src="./sounds/hihat.wav" id="e"></audio>
-        <audio src="./sounds/kick.wav" id="r"></audio>
-        <audio src="./sounds/openhat.wav" id="t"></audio>
-        <audio src="./sounds/ride.wav" id="y"></audio><br>
-        <audio src="./sounds/snare.wav" id="u"></audio>
-        <audio src="./sounds/tink.wav" id="i"></audio>
-        <audio src="./sounds/tom.wav" id="o"></audio>
-    </div>
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

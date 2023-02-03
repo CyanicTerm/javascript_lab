@@ -1,3 +1,77 @@
-#sounds {
-    display: none;
+body{
+    background-color: azure;
+    color: grey;
+    overflow: hidden;
+    font-size: 25px;
+}
+
+#wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main{
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#paths{
+    width: 1024px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.path{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.btn{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    appearance: none;
+    background: grey;
+    border: 0;
+    border-radius: 20px;
+}
+
+input[type="checkbox"]{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 0 0;
+    appearance: none;
+    background: grey;
+}
+
+input[type="checkbox"]:checked{
+    box-shadow: inset 0 0 0 30px red;
+}
+
+
+#addPath{
+    width: 30px;
+    height: 30px;
+    margin: 5px auto 0 auto;
+    font-size: 25px;
+    border: 0;
+    border-radius: 20px;
+}
+
+#playAllBtn, #playSelectedBtn, #deleteSelectedBtn{
+    width: 111px;
+    height: 30px;
+    margin: 10px auto 0 auto;
+    border: 0;
+    border-radius: 20px;
 }
