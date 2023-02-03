@@ -103,6 +103,7 @@ const renderNotes = () => {
         } else {        
           app.appendChild(noteEl);
         }
+        console.log(app)
     });
 };
 confirmBtn.addEventListener('click', (e) => {
